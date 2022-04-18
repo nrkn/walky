@@ -1,0 +1,30 @@
+{
+  "name": "@nrkn/walky",
+  "version": "0.0.1",
+  "description": "Before you can run, you must walk",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "bundle": "browserify ./dist/client/index.js -o ./public/walky.js",
+    "start": "npm run build && npm run bundle && node ./dist/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrkn/walky.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrkn/walky/issues"
+  },
+  "homepage": "https://github.com/nrkn/walky#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "object-fit-math": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.24"
+  }
+}
